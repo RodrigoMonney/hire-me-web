@@ -37,6 +37,9 @@ Este projeto consome a API backend do desafio técnico e oferece uma interface f
 
 ```bash
 npm install
+```
+
+```bash
 npm run start:dev
 ```
 
@@ -63,13 +66,13 @@ npm install
 
 ### Variáveis de ambiente
 
-Crie um arquivo `.env.local` com:
+⚠️ Crie um arquivo `.env.local` com a url da API:
 
 ```env
 NEXT_PUBLIC_API_URL=http://localhost:3000/api/v1
 ```
 
-> O projeto também funciona com `api.ts` configurado diretamente, mas essa é a forma recomendada.
+> O projeto também funciona com `axios.api.ts` configurado diretamente, mas essa é a forma recomendada.
 
 ---
 
@@ -79,7 +82,7 @@ NEXT_PUBLIC_API_URL=http://localhost:3000/api/v1
 npm run dev
 ```
 
-Acesse em: [http://localhost:3000](http://localhost:3000)
+Acesse em: [http://localhost:3001](http://localhost:3001)
 
 ---
 
@@ -89,24 +92,6 @@ Acesse em: [http://localhost:3000](http://localhost:3000)
 | ------- | -------------------------------------------- |
 | `/`     | Tabela de usuários com ações CRUD            |
 | Modais  | Abertos inline para criar, editar ou excluir |
-
----
-
-## 🗃️ Estrutura resumida
-
-```
-src/
-├─ pages/               # Pages Router
-│  └─ index.tsx         # Página principal
-├─ components/
-│  ├─ UserTable.tsx     # Lista de usuários
-│  └─ UserFormModal.tsx # Modal de criação/edição/exclusão
-├─ lib/
-│  ├─ api.ts            # Axios baseURL
-│  └─ react-query.ts    # QueryClientProvider
-└─ styles/
-   └─ globals.css       # Tailwind config
-```
 
 ---
 

@@ -3,7 +3,6 @@ import { act, render, screen, waitFor } from "@testing-library/react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { UserTable } from "../UserTable";
 import { api } from "../../api/axios.api";
-import { renderWithQueryClient } from "../../tests/utils";
 
 const mockUsers = [
   {

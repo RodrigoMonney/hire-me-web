@@ -76,7 +76,23 @@ NEXT_PUBLIC_API_URL=http://localhost:3000/api/v1
 
 ---
 
-## 💻 Execução local
+## 🚀 Execução em ambiente de produção local (simulação)
+
+Para simular o comportamento da aplicação como se estivesse em produção:
+
+```bash
+npm run build
+```
+
+```bash
+npm run start
+```
+
+Acesse em: [http://localhost:3001](http://localhost:3001)
+
+> 🔄 Isso compila o projeto e inicia o servidor otimizado para produção.
+
+## 💻 Execução local para desenvolvimento
 
 ```bash
 npm run dev
